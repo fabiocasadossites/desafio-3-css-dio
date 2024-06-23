@@ -8,4 +8,4 @@ Neste desafio, você terá a oportunidade de colocar em prática os conceitos ap
 - CSS (com ênfase em Flexbox)
 
 ### Para ver a página
-[Link do projeto](https://fabiocasadossites.github.io/desafio-2-css-dio/)
+[Link do projeto](https://fabiocasadossites.github.io/desafio-3-css-dio/)
