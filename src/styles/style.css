@@ -1,0 +1,132 @@
+@import url(../styles/reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+}
+
+body {
+    height: 100vh;
+    margin: 0 24px 0 24px;
+    display: grid;
+    grid-template-columns: 300px repeat(3, 1fr);
+    grid-template-rows: 60px 1fr;
+    grid-template-areas: "header header header header" "sidebar main main main";
+}
+
+/* HEADER */
+
+header {
+    padding: 16px 24px;
+    width: 100%;
+    justify-self: center;
+    grid-area: header;
+}
+
+header .cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+header .cabecalho div {
+    display: flex;
+    align-items: center;
+}
+
+
+header .cabecalho .cabecalho_menu {
+    gap: 24px;
+}
+
+header .cabecalho .cabecalho_pesquisa input {
+    width: 300px;
+    height: 25px;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #000;
+}
+
+header .cabecalho .cabecalho_pesquisa a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 25px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    border-right: 1px solid #000;
+    background-color: #F8F8F8;
+}
+
+header .cabecalho .cabecalho_perfil {
+    gap: 24px;
+}
+
+/* SIDE-BAR */
+
+aside {
+    grid-area: sidebar;
+    padding: 24px;
+    justify-self: start;
+}
+
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+aside .sidebar div {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+aside .sidebar div .sidebar-strong {
+    font-weight: 600;
+}
+
+/* MAIN */
+
+main {
+    grid-area: main;
+    padding: 28px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: auto;
+    background: #F9F9F9;
+}
+
+main .item div {
+    display: flex;
+    max-width: 250px;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+main .item div div {
+    display: flex;
+    flex-direction: column;
+}
+
+main h3 {
+    color: #000;
+    font-weight: 600;
+}
+
+main p {
+    color: #515151;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 150px;
+}
+
